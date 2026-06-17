@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ask Questions If Underspecified"
+  short_description: "Clarify before acting on underspecified work"
+  default_prompt: "Use $ask-questions-if-underspecified to clarify the requirements before implementing."
+policy:
+  allow_implicit_invocation: false
+
