@@ -1,0 +1,4 @@
+interface:
+  display_name: "Adversarial Test Sweep"
+  short_description: "Run requested comprehensive adversarial unit-test audits"
+  default_prompt: "Use $adversarial-test-sweep to perform a comprehensive adversarial unit-test audit within the requested scope, fix concrete bugs, retain permanent regressions, and consolidate weak tests until the relevant suite passes with clear coverage evidence."
