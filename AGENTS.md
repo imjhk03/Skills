@@ -58,6 +58,10 @@
 - For an HIG page at `https://developer.apple.com/design/...`, create the agent-readable URL by inserting `/tutorials/data/` immediately before `/design/` and appending `.md` to the page path (before any query string or fragment). Example: `https://developer.apple.com/design/human-interface-guidelines/typography` becomes `https://developer.apple.com/tutorials/data/design/human-interface-guidelines/typography.md`.
 - Verify the transformed URL before relying on it. If the `.md` route is unavailable, use the equivalent verified DocC JSON URL ending in `.json` and read or render that content as Markdown.
 
+## SF Symbols
+
+- Whenever working with SF Symbols, check whether `/Applications/SF Symbols.app/Contents/Executables/sfsymbols` is executable. If installed, use this command-line tool to find symbols and verify symbol names for use in code. Export assets only when the user explicitly requests it. Quote the full path when invoking it, and consult `--help` or `help <command>` for supported options. If it is not installed, continue with other available sources and tools.
+
 ## Apple Developer Documentation
 
 - Whenever searching Apple documentation, append ` md` to Apple Developer documentation searches so the result renders as Markdown.
